@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <!--Adding Bulma Framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Trov</title>
+</head>
+<body>
+    <header id="mainContainer">
+        <h1 id="trov-title">Trov</h1>
+        <div id="menu-and-outline-holder">
+            <div class="outline">
+             <p id="outline-p"><b>Changing Your View On Space</b></p>
+            </div>
+            <div id="menu">
+                <div id="menu-top">
+                    <button id="get-articles" class="button menu-btn">Get Articles</button>
+                    <button id="get-reports" class="button menu-btn">Get Reports</button>
+                </div>
+                <div id="menu-bottom">
+                    <button id="get-blogs" class="button menu-btn">Get Blogs</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="search-div">
+            <form autocomplete="off" id="search-form">
+                <label id="search-label" for="search"></label>
+                <div id="search-input-div">
+                    <input list="searches" type="search" class ="dropdown-trigger input is-rounded" id="search-news" name="search" placeholder="Search Here"/>
+                    <datalist id="searches">
+                        <option id="searchList"></option>
+                    </datalist>
+                </div>
+                <button class="button" id="search-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <section id="articles">
+            <div id="div-list-articles" class="list">
+                <ul id="list-articles">
+                </ul>
+            </div>
+            <div class="article-buttons btn-div">
+                <button class="button" id="article-prev" class="previous-article-list">Previous</button>
+                <button class="button" id="article-next" class="next-article-list">Next</button>
+            </div>
+        </section>
+        <section id="reports">
+            <div id="div-list-reports" class="list">
+                <ul id="list-reports">
+                </ul>
+            </div>
+            <div class="report-buttons btn-div">
+                <button class="button" id="report-prev" class="previous-report-list">Previous</button>
+                <button class="button" id="report-next" class="next-report-list">Next</button>
+            </div>
+        </section>
+        <section id="blogs">
+            <div id="div-list-blogs" class="list">
+                <ul id="list-blogs">
+                </ul>
+            </div>
+            <div class="blog-buttons btn-div">
+                <button class="button" id="blog-prev" class="previous-blog-list">Previous</button>
+                <button class="button" id="blog-next" class="next-blog-list">Next</button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
