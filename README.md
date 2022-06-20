@@ -21,7 +21,7 @@ WHEN I am choosing my article we have a stunning view of what is showing from th
 * NASA - space image updated daily
 
 ## Live Page
-Deployed Page: https://sarahstelljes.github.io/Trov/
+Deployed Page: https://duhjeffmeister.github.io/project1/
 
 ## Image
 ![Screenshot](./assets/images/screenshot.png)
